@@ -542,8 +542,8 @@ namespace PokemonTypeCalculator
             if (effectiveness <= .25) return "red";
             if (effectiveness <= .5) return "orange";
             if (effectiveness >= 400) return "LightBlue";
-            if (effectiveness >= 4) return "LightGreen";
-            if (effectiveness >= 2) return "green";
+            if (effectiveness >= 4) return "green";
+            if (effectiveness >= 2) return "LightGreen";
             return "White";
         }
 
@@ -566,7 +566,7 @@ namespace PokemonTypeCalculator
                 foreach (var deftype in pokeTypes)
                 {
                     if (deftype == PokeType.None) continue;
-                    resist /= weaknesses[restype][deftype];
+                    resist *= weaknesses[restype][deftype];
                 }
 
                 ResultView.Items.Add(new TypeItem { 

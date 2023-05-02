@@ -5,6 +5,19 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>bag_rainbow_wing_sprite.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Bag_Rainbow_Wing_Sprite.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bag_rainbow_wing_sprite.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Bag_Rainbow_Wing_Sprite.png" />
+  </ItemGroup>
 
 </Project>

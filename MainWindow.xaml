@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PokemonTypeCalculator"
         mc:Ignorable="d"
-        Title="Pokemon Type Effectiveness Calculator" Height="440" Width="580" ResizeMode="NoResize">
+        Title="Pokemon Type Effectiveness Calculator" Height="440" Width="580" ResizeMode="NoResize" Icon="/Bag_Rainbow_Wing_Sprite.png">
     <Window.Resources>
         <DataTemplate x:Key="myCellTemplateEffect">
             <DockPanel Width="90" Background="{Binding BGColor}" HorizontalAlignment="Stretch" Margin="-6,-2,-6,-3.5">
@@ -92,25 +92,17 @@
                 <GridView>
                     <GridViewColumn Header="Type" CellTemplate="{StaticResource myCellTemplateName}"/>
                     <GridViewColumn Header="Effectiveness" CellTemplate="{StaticResource myCellTemplateEffect}"/>
-                    <GridViewColumn Header="Resistance" CellTemplate="{StaticResource myCellTemplateResist}"/>
+                    <GridViewColumn Header="Weakness" CellTemplate="{StaticResource myCellTemplateResist}"/>
                 </GridView>
             </ListView.View>
         </ListView>
         <Label Content="Effectiveness Key:" HorizontalAlignment="Left" Margin="151,20,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Mega Effective" Background="LightGreen" HorizontalAlignment="Left" Margin="151,40,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Super Effective" Background="Green" HorizontalAlignment="Left" Margin="151,60,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
+        <Label Content="Mega Effective" Background="Green" HorizontalAlignment="Left" Margin="151,40,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
+        <Label Content="Super Effective" Background="LightGreen" HorizontalAlignment="Left" Margin="151,60,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
         <Label Content="Normal" Background="White" HorizontalAlignment="Left" Margin="151,80,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
         <Label Content="Not Very Effective" Background="Orange"  HorizontalAlignment="Left" Margin="151,100,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
         <Label Content="Very Not Very Effective" Background="Red" HorizontalAlignment="Left" Margin="151,120,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
         <Label Content="Immunity" Background="Gray" HorizontalAlignment="Left" Margin="151,140,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        
-        <Label Content="Resistance Key:" HorizontalAlignment="Left" Margin="151,180,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Immunity" Background="LightBlue" HorizontalAlignment="Left" Margin="151,200,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Mega Resistant" Background="LightGreen" HorizontalAlignment="Left" Margin="151,220,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Resistant" Background="Green" HorizontalAlignment="Left" Margin="151,240,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Normal" Background="White" HorizontalAlignment="Left" Margin="151,260,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Weak" Background="Orange"  HorizontalAlignment="Left" Margin="151,280,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        <Label Content="Very Weak" Background="Red" HorizontalAlignment="Left" Margin="151,300,0,0" VerticalAlignment="Top" Padding="5,0,5,0"/>
-        
+
     </Grid>
 </Window>
